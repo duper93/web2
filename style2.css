@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+/* DEBUT  SIDEBAR*/
+*
+{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zilla Slab', serif;
+
+}
+
+body
+{
+  
+  background:white;
+  min-height: 200vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  
+  line-height: 1.6;
+  background-image: url(acceuil.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+
+.navigation
+{
+  position:fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 70px;
+  border-radius: 10px;
+  box-sizing: initial;
+  border-left: 5px solid rgb(231, 100, 12);
+  background-color: rgb(231, 100, 12);
+  transition: width 0.6s;
+  overflow-x: hidden;
+  box-shadow: 3px 6px 17px 6px #000000;
+
+}
+
+.navigation.active
+{
+  width: 300px;
+}
+.navigation ul
+{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+.navigation ul li
+{
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.navigation ul li.active
+{
+  background: white;
+
+}
+.navigation ul li b:nth-child(1)
+{
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width: 100%;
+  background: white;
+  display: none;
+}
+.navigation ul li b:nth-child(1)::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background: rgb(231, 100, 12);
+}
+.navigation ul li b:nth-child(2)
+{
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  width: 100%;
+  background: white;
+  display: none;
+}
+.navigation ul li b:nth-child(2)::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  background: rgb(231, 100, 12);
+}
+
+.navigation ul li.active b:nth-child(1),
+.navigation ul li.active b:nth-child(2)
+{
+  display: block;
+  
+}
+.navigation ul li a
+{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: white;
+
+
+}
+.navigation ul li.active a
+{
+ color:rgb(21, 99, 187);
+
+}
+.navigation ul li a .icon
+{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+  color: rgb(21, 99, 187);
+
+}
+.navigation ul li a .icon ion-icon
+{
+  font-size: 1.5em;
+  
+}
+.navigation ul li a .title
+{
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: normal;
+
+
+}
+.toggle
+{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: rgb(231, 100, 12);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.toggle.active
+{
+  background: rgb(21, 99, 187);
+}
+.toggle ion-icon
+{
+  position: absolute;
+  color: white;
+  font-size: 34px;
+  display: none;
+
+}
+.toggle ion-icon.open,
+.toggle.active ion-icon.close
+{
+  display: block;
+  
+
+}
+
+
+
+
+.toggle ion-icon.close,
+.toggle.active ion-icon.open
+{
+  display: none;
+  
+}
+/* FIN  SIDEBAR*/
+/* DEBUT DESTINATION*/
+
+div.destination-item
+{
+    width: 400px;
+    
+    height: 500px;
+    margin-bottom: 20px;
+    position: relative;
+
+    
+   
+}
+
+
+
+div.destinations-group
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+   
+   
+}
+.caribou
+{
+    background-image: url(gettyimages-517747003-612x612.jpeg);
+    
+   
+
+}
+.grece
+{
+    background: url(gettyimages-1277293911-612x612.jpeg);
+    
+}
+.tokyo
+{
+    background: url(gettyimages-961324340-612x612.jpeg);
+}
+
+.overlay
+{
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+span.nom
+{
+    position: relative;
+    color: rgb(21, 99, 187);
+    background-color:rgb(231, 100, 12) ;
+    top: -30px;
+    float: right;
+    padding: 10px;
+    margin-right: -20px;
+    font-size: 22px;
+    box-shadow: -10px 7px 20px  #000000;
+}
+span.prix
+{
+    position: relative;
+    
+    background-color: white;
+    padding: 12px 12px;
+    font-size: 30px;
+    top:400px  
+
+}
+span.prix a
+{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(231, 100, 12);
+   
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+span.prix a:hover
+{
+    background-color: rgb(21, 99, 187);
+    
+}
+
+
+/* FIN DESTINATION*/
+
