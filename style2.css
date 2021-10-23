@@ -161,6 +161,13 @@ body
 
 
 }
+.navigation ul li a .title img
+{
+  position: relative;
+  height: 170px;
+  top: 40px;
+  
+}
 .toggle
 {
   position: fixed;
@@ -294,12 +301,21 @@ span.prix a
     font-size: 30px;
 }
 
-span.prix a:hover
-{
-    background-color: rgb(21, 99, 187);
-    
-}
+
 
 
 /* FIN DESTINATION*/
+/* DEBUT POP UP */
+
+.modal-container
+{
+    display: none;
+}
+.prix .but
+{
+  list-style: none;
+  background-color: blue;
+}
+
+/* FIN POP UP */
 
