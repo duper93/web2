@@ -20,7 +20,7 @@ body
   height: 100vh;
   
   line-height: 1.6;
-  background-image: url(acceuil.jpeg);
+  background-color: rgb(21, 99, 187);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -318,4 +318,6 @@ span.prix a
 }
 
 /* FIN POP UP */
+
+
 

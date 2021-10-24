@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mySlides {
+            display:none;
+            margin-bottom: 800px;
+    margin-left: 500px;
+    margin-right: 400px;
+        }
+        </style>
+        </head>
+        
+        <body>
+        
+        <h2 class="w3-center">Automatic Slideshow</h2>
+        
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="../tokyo/Miyajima-Torii-temple-Itsukushima-Jinja.jpeg" >
+            <img class="mySlides" src="../tokyo/Nara-Parc-daims.jpeg" >
+            <img class="mySlides" src="../tokyo/thumb_110473_1200_1_0_0_auto.jpeg" >
+          </div>
+        
+        <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+        </body>
+        </html>

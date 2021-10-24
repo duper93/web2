@@ -11,8 +11,12 @@
 
 body
 {
-  
-  background:white;
+  background-image: url(acceuil.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /*background:white;
   min-height: 200vh;
   justify-content: center;
   display: flex;
@@ -25,7 +29,7 @@ body
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 100vh;
+  height: 100vh;*/
 }
 
 .navigation
@@ -216,7 +220,7 @@ body
 /* FIN  SIDEBAR*/
 
 /* DEBUT FORMULAIRE D'INSCRIPTION */
-#formulaire
+/*#formulaire
 {
 
     display: flex;
@@ -252,13 +256,14 @@ body
     padding-bottom: 100px;
     padding-top: 100px;
     
+    
 }
 
 
 
 .form-control
 {
-    
+    margin-left: 130px;
     position: relative;
     font-size: 16px;
     height: auto;
@@ -274,5 +279,194 @@ body
     padding: 10px;
     background-color:rgb(231, 100, 12);
     font-size: 16px ;
+}*/
+/* FIN FORMULAIRE D'INSCRIPTION */
+/* DEBUT POP UP INSCRIPTION*/
+
+.container
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.button
+{
+  background-color:white;
+  padding: 10px 15px;
+  color: rgb(21, 99, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 19px;
+  border-radius: 10px;
+  box-shadow: 3px 6px 17px 6px #000000;
+  margin-top: 25px;
+  text-decoration: none;
+  transition: 0.5s;
+
+}
+.button:hover
+{
+  background-color:rgb(231, 100, 12);
 }
 
+/*.popup
+{
+  background: rgb(0, 0, 0,0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.popup-content
+{
+  height: 470px;
+  width: 500px;
+  background-color: rgb(21, 99, 187);
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  
+}
+input
+{
+  margin: 20px auto;
+  display: block;
+  width: 50%;
+  padding: 15px;
+  border: solid 1px rgb(21, 99, 187);
+  border-radius: 10px;
+color: rgb(231, 100, 12);
+}
+.close
+{
+  position: absolute;
+  top:-1px;
+  right: -1px;
+  background-color: rgb(21, 99, 187);
+  border-radius: 50%;
+  box-shadow: 3px 3px 19px 2px #000000;
+  cursor: pointer;
+
+}*/
+
+.popup .overlay
+{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0,0.6);
+  z-index: 1;
+  display: none;
+
+  
+}
+
+.popup .content
+{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%) scale(0);
+ background-color: rgb(21, 99, 187);
+ height: 490px;
+ width: 500px;
+ z-index: 2;
+ justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+input
+{
+  margin: 20px auto;
+  display: block;
+  width: 50%;
+  padding: 15px;
+  border: solid 1px rgb(21, 99, 187);
+  border-radius: 10px;
+color: rgb(231, 100, 12);
+}
+
+.popup .close-btn
+{
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top:20px;
+  width: 30px;
+  height: 30px;
+  background:rgb(231, 100, 12);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 50%;
+
+}
+
+.popup.toggle.active .overlay
+{
+    display: block;
+}
+
+.popup.active .content
+{
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%,-50%) scale(1);
+}
+.button1
+{
+  background-color:white;
+  padding: 10px 15px;
+  color: rgb(21, 99, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 19px;
+  border-radius: 10px;
+  box-shadow: 3px 6px 17px 6px #000000;
+  margin-top: 25px;
+  text-decoration: none;
+  transition: 0.5s;
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%) ;
+
+}
+.button1:hover
+{
+  background-color:rgb(231, 100, 12);
+}
+.button
+{
+  background-color:white;
+  padding: 10px 15px;
+  color: rgb(21, 99, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 19px;
+  border-radius: 10px;
+  box-shadow: 3px 6px 17px 6px #000000;
+  margin-top: 25px;
+  text-decoration: none;
+  transition: 0.5s;
+  
+
+}
+.button:hover
+{
+  background-color:rgb(231, 100, 12);
+}
+/* FIN POP UP INSCRIPTION*/

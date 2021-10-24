@@ -66,7 +66,7 @@
 
     </div>
 
-    <div id="formulaire"> 
+   <!--<div id="formulaire"> 
         <form action="">
             <h2>Se connecter</h2>
             <input type="email" class="form-control" name="mail" placeholder="votre adresse mail" required="">
@@ -74,9 +74,27 @@
             <br>
             <button class="btn" type="submit">Se connecter</button> 
             <p>pas encore inscrit?<a href="inscription.html" id="msg">Inscrivez vous</a></p>   
-        </form>   
+        </form>   --> 
 
     </div>
+
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglepopup()">&times;</div>
+        <img src="2.png" alt="logo" height="100px">
+        <input type="email" class="form-control" name="mail" placeholder="votre adresse mail" required="">
+        <input type="password" class="form-control" name="password" placeholder="votre mot de passe" required="">
+        <br>
+        <a href="#" class="button">se connecter</a>
+        <br>
+        <br>
+        <br>
+        <p>pas encore inscrit?<a href="inscription.html" id="msg">Inscrivez vous</a></p>   
+      </div>
+    </div>
+   
+    <button onclick="togglepopup()" class="button1">Se connecter</button>
 
 
 
